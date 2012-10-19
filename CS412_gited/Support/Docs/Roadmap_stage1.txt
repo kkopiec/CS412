@@ -1,0 +1,7 @@
+1. We need to be able to read the files
+2. Files are xml formed (thats good) so we need to be able to parse xml
+2.1 xml parsers are available for java ( in std libs i think)
+3. we need to stem content using lucene and store result in some serializable object so we do not need to stem files again and again
+4. we need some test plan and harness tests to be sure that the above works
+
+Thats it for the first milestone DL 30th Oct
