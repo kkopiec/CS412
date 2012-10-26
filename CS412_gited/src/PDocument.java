@@ -1,16 +1,16 @@
 import org.xml.sax.helpers.DefaultHandler;
 
 public class PDocument {
-	private String docNo;
-	private String archive; // path to gz file
-	private String profile;
-	private String date;
-	private String headline;
-	private String byline;
-	private String dateline;
-	private String text;
-	private String pub;
-	private String page;
+	private String docNo="";
+	private String archive=""; // path to gz file
+	private String profile="";
+	private String date="";
+	private String headline="";
+	private String byline="";
+	private String dateline="";
+	private String text="";
+	private String pub="";
+	private String page="";
 
 	public PDocument(String currentGzFileName) {
 		archive = currentGzFileName;

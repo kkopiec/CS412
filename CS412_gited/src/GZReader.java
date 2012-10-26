@@ -22,6 +22,7 @@ public class GZReader extends DefaultHandler {
 	private String currentGzFileName = "";
 	private int readed=0;
 	private int articles=0;
+	
 	/**
 	 * Lists of allready processed files
 	 */
@@ -133,6 +134,10 @@ public class GZReader extends DefaultHandler {
 			curentWorkDocumentData.setPub(currentString);
 		} else if (qName.equalsIgnoreCase("Page")) {
 			curentWorkDocumentData.setPage(currentString);
+		} else if (qName.equalsIgnoreCase("BYLINE")) {
+			curentWorkDocumentData.setByline(currentString);
+		} else if (qName.equalsIgnoreCase("DATELINE")) {
+			curentWorkDocumentData.setDateline(currentString);
 		}
 	}
 	public void printStats()
